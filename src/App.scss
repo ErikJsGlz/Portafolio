@@ -184,6 +184,7 @@
         div {
             margin-right: 2vw;
             cursor: pointer;
+
             span {
                 display: inline-block;
                 line-height: 10px;
@@ -191,10 +192,12 @@
             }
         }
     }
+
     svg {
         margin-right: 6px;
         width: 1vw;
         color: white;
+        height: 15px;
     }
 }
 

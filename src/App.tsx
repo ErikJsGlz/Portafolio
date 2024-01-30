@@ -2,6 +2,7 @@ import { ReactComponent as TypescriptLogo } from "./assets/icons/typescript_logo
 import { ReactComponent as PostgresqlLogo } from "./assets/icons/postgresql_logo.svg";
 import { ReactComponent as LinkedinIcon } from "./assets/icons/linkedin_icon.svg";
 import { ReactComponent as FlutterLogo } from "./assets/icons/flutter_logo.svg";
+import { ReactComponent as EmailIcon } from "./assets/icons/mail_icon.svg.svg";
 import { ReactComponent as PythonLogo } from "./assets/icons/python_logo.svg";
 import { ReactComponent as ReactLogo } from "./assets/icons/react_logo.svg";
 import { ReactComponent as MySqlLogo } from "./assets/icons/mysql_logo.svg";
@@ -277,7 +278,7 @@ function App() {
 
             <div id="scroll-container">
                 <div id="about-me" className="section text-container">
-                    <h1>Hola, soy Erik Josías.</h1>
+                    <h1>Hola, soy Erik Josías👋.</h1>
                     <span>
                         Soy un Software Designer / Engineer ubicado en
                         Monterrey, México. <br></br> Mi motivación diaria es
@@ -288,9 +289,25 @@ function App() {
                         </span>
                     </span>
                     <div>
-                        <div>
+                        <div
+                            onClick={() =>
+                                window.open(
+                                    "https://www.linkedin.com/in/erik-js-glz-lc/"
+                                )
+                            }
+                        >
                             <LinkedinIcon />
                             <span>LINKEDIN</span>
+                        </div>
+                        <div
+                            onClick={() => {
+                                window.open(
+                                    "mailto:erikjs.glz@gmail.com?subject=Solicitar%20información%20de%20contacto&body=Qué%20tal%20Erik!"
+                                );
+                            }}
+                        >
+                            <EmailIcon />
+                            <span>Correo</span>
                         </div>
                         {/* <div>
                             <GithubIcon />
@@ -728,6 +745,18 @@ function App() {
                                 animaciones dentro de la aplicación y las
                                 responsividad para pantallas más pequeñas,
                                 siempre buscando respetar el diseño propuesto.
+                                <br />
+                                <br />
+                                <span
+                                    onClick={() =>
+                                        window.open(
+                                            "https://www.sisefarpro.com/"
+                                        )
+                                    }
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    Vísitala aquí
+                                </span>
                             </span>
                         </div>
                         <div className="project__technologies">
@@ -858,14 +887,14 @@ function App() {
                     <div id="timeline-content">
                         <ul className="timeline">
                             <li className="event" data-date="2022-2024">
-                                <h3>Software Developer</h3>
+                                <h3>Software Developer🤯</h3>
                                 <h5>CHRISTUS CEI</h5>
                                 <p>
                                     Mi principal experiencia, he colaborado con
-                                    distintos departamentos y países para
-                                    brindar un mejor servicio médico desde la
-                                    tecnología. Los proyectos han impactado en
-                                    el área operativa y administrativa. He
+                                    distintas personas, departamentos y países
+                                    para brindar un mejor servicio médico desde
+                                    la tecnología. Los proyectos han impactado
+                                    en el área operativa y administrativa. He
                                     trabajado desde creando nuevos proyecto como
                                     también dandole seguimiento a proyectos
                                     existentes limpiando código, refactorizando
@@ -873,7 +902,7 @@ function App() {
                                 </p>
                             </li>
                             <li className="event" data-date="2022">
-                                <h3>Freelancer</h3>
+                                <h3>Freelancer👽</h3>
                                 <p>
                                     Trabajé por unos meses para una empresa de
                                     mueblería dandole mantenimiento a su página
@@ -887,14 +916,14 @@ function App() {
                                 id="date"
                                 data-date="2020-2021"
                             >
-                                <h3>On Campus Intern</h3>
+                                <h3>On Campus Intern👶</h3>
                                 <h5>Tec de Monterrey</h5>
                                 <p>
-                                    Estuve dandole mantenimiento a una página
-                                    web de posgrado sobre cursos del Tec de
-                                    Monterrey, haciendo uso de Wordpress y
-                                    también estuve ayudando con cierta analítica
-                                    semanal de un chatbot de asistencia.
+                                    Estuve dando mantenimiento a una página web
+                                    de posgrado sobre cursos del Tec de
+                                    Monterrey con Wordpress y también estuve
+                                    ayudando con cierta analítica semanal de un
+                                    chatbot de asistencia.
                                 </p>
                             </li>
                         </ul>
