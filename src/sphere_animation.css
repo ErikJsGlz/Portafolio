@@ -1,0 +1,111 @@
+.sphere {
+    position: absolute;
+    border-radius: 80%;
+    filter: blur(70px);
+    opacity: 0.6;
+}
+
+#first-sphere-animation {
+    left: -20%;
+    top: -10%;
+    height: 40vw;
+    width: 40vw;
+    background: conic-gradient(from 45deg, #be98be 65deg, #d0a5d0 353deg);
+    /* url(https://grainy-gradients.vercel.app/noise.svg); */
+    animation: move-first-sphere 40s ease infinite;
+}
+
+@keyframes move-first-sphere {
+    20% {
+        left: 10%;
+        top: 45%;
+    }
+
+    35% {
+        left: 60%;
+        top: 35%;
+        height: 55vw;
+        width: 55vw;
+        opacity: 0.8;
+        filter: blur(80px);
+    }
+
+    60% {
+        top: -30%;
+        height: 45vw;
+        width: 45vw;
+    }
+
+    80% {
+        left: 30%;
+        top: -40%;
+        height: 38vw;
+        width: 38vw;
+    }
+
+    85% {
+        left: 20%;
+        top: -35%;
+        height: 35vw;
+        width: 35vw;
+    }
+}
+
+#second-sphere-animation {
+    height: 20vw;
+    width: 20vw;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(
+            18% 28% at 24% 50%,
+            #cefaffff 7%,
+            #073aff00 100%
+        ),
+        radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+        radial-gradient(70% 53% at 36% 76%, #73f2ffff 0%, #073aff00 100%);
+    /* url(https://grainy-gradients.vercel.app/noise.svg); */
+    animation: move-second-sphere 27s ease alternate infinite;
+}
+
+@keyframes move-second-sphere {
+    15% {
+        bottom: 20%;
+    }
+
+    20% {
+        right: 40%;
+        bottom: 70%;
+        height: 10vw;
+        width: 10vw;
+    }
+
+    50% {
+        right: 60%;
+        bottom: 70%;
+    }
+
+    55% {
+        right: 65%;
+        bottom: 50%;
+        filter: blur(90px);
+    }
+
+    65% {
+        height: 35vw;
+        width: 35vw;
+        right: 80%;
+        bottom: 10%;
+    }
+
+    75% {
+        height: 28vw;
+        width: 28vw;
+        bottom: -10%;
+    }
+
+    85% {
+        height: 20vw;
+        width: 20vw;
+        bottom: 15%;
+    }
+}

@@ -1,0 +1,405 @@
+.App {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        133deg,
+        #000706 2%,
+        #00272d 71%,
+        #134647 94%
+    );
+}
+
+.background-prp {
+    background-image: radial-gradient(
+            18% 28% at 28% 52%,
+            #671e75 7%,
+            #073aff00 100%
+        ),
+        radial-gradient(70% 53% at -37% 10%, #be98be 0%, #073aff00 100%),
+        radial-gradient(42% 53% at 128% 37%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(31% 43% at 100% -18%, #be98be 24%, #073aff00 100%),
+        radial-gradient(21% 37% at 37% 5%, #be98be52 9%, #073aff00 100%),
+        radial-gradient(35% 56% at 41% -27%, #be98be 9%, #073aff00 100%),
+        radial-gradient(74% 86% at -32% 112%, #be98be 24%, #073aff00 100%),
+        linear-gradient(137deg, #350040 30%, #671e75 83%, #be98be 96%);
+}
+
+.background-sisefar {
+    background-image: radial-gradient(
+            26% 42% at 42% -3%,
+            #b7dfd9 0%,
+            #073aff00 100%
+        ),
+        radial-gradient(18% 69% at 98% 41%, #b7dfd9 7%, #073aff00 100%),
+        radial-gradient(24% 35% at 46% 104%, #b7dfd9d4 0%, #073aff00 100%),
+        linear-gradient(50deg, #000336 1%, #247170ff 31%, #329b99ff 53%);
+}
+
+.background-nurasign {
+    background-image: radial-gradient(
+            18% 28% at 50% 32%,
+            #be98be8f 0%,
+            #073aff00 100%
+        ),
+        radial-gradient(18% 28% at 93% 0%, #be98be8f 0%, #073aff00 100%),
+        radial-gradient(18% 28% at 96% 7%, #be98be8f 0%, #073aff00 100%),
+        radial-gradient(18% 28% at 96% 28%, #be98be8f 0%, #073aff00 100%),
+        radial-gradient(18% 28% at 0% 0%, #be98be6b 0%, #073aff00 100%),
+        radial-gradient(21% 42% at 42% -3%, #be98be 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 58% 59%, #be98be8a 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 54% 49%, #be98be91 1%, #073aff00 100%),
+        radial-gradient(12% 24% at 41% 30%, #be98be91 1%, #073aff00 100%),
+        radial-gradient(12% 24% at 37% 14%, #be98be91 1%, #073aff00 100%),
+        radial-gradient(12% 24% at 45% 52%, #be98be78 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 51% 14%, #be98be7d 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 50% 4%, #be98beb8 0%, #073aff00 100%),
+        radial-gradient(24% 35% at 2% 98%, #be98beb8 0%, #073aff00 100%),
+        linear-gradient(50deg, #671e75 71%, #671e75 100%);
+}
+
+.background-mywund {
+    background-image: radial-gradient(
+            31% 38% at 12% -6%,
+            #f67e7edb 0%,
+            #073aff00 100%
+        ),
+        radial-gradient(12% 24% at 78% 105%, #ffd06c73 1%, #073aff00 100%),
+        radial-gradient(12% 24% at 73% 74%, #ffd06c73 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 78% 87%, #ffd06c70 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 66% 91%, #ffd06c9c 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 61% 106%, #ffd06cba 0%, #073aff00 100%),
+        radial-gradient(12% 24% at 46% 112%, #ffd06c 0%, #073aff00 100%),
+        radial-gradient(11% 23% at 83% 70%, #ffd06c61 0%, #073aff00 100%),
+        radial-gradient(15% 37% at 29% 107%, #ffd06cff 3%, #073aff00 100%),
+        linear-gradient(50deg, #ffd06c 7%, #f67e7e 26%, #a799ff 51%);
+}
+
+.background-billable {
+    background-image: radial-gradient(
+            36% 38% at -6% 35%,
+            #ff89bbff 0%,
+            #073aff00 100%
+        ),
+        radial-gradient(17% 37% at 35% 74%, #ffbd12ff 0%, #073aff00 100%),
+        radial-gradient(19% 19% at 39% 72%, #ffbd12ff 0%, #073aff00 100%),
+        radial-gradient(24% 28% at 27% -8%, #00c6ae8a 0%, #073aff00 100%),
+        radial-gradient(37% 37% at 63% 107%, #000000ff 0%, #073aff00 100%),
+        radial-gradient(63% 34% at 101% 107%, #000000bf 0%, #073aff00 100%),
+        radial-gradient(33% 30% at -14% 101%, #00c6aeb0 0%, #073aff00 100%),
+        radial-gradient(16% 32% at 66% 36%, #00c6aeff 0%, #073aff00 100%),
+        radial-gradient(18% 23% at 78% 63%, #00c6aeff 0%, #073aff00 100%),
+        linear-gradient(
+            68deg,
+            #ff89bb 5%,
+            #fda463 24%,
+            #ffbd12 45%,
+            #84bf5c 65%,
+            #00c6ae 78%
+        );
+}
+
+.background-ley {
+    background-image: radial-gradient(
+            12% 24% at 62% 82%,
+            #bbcce347 1%,
+            #073aff00 100%
+        ),
+        radial-gradient(17% 48% at 62% 42%, #ae9df0 0%, #073aff00 100%),
+        radial-gradient(20% 39% at 16% 31%, #2a7de1e8 0%, #073aff00 100%),
+        radial-gradient(21% 22% at 60% 14%, #ae9df0 0%, #073aff00 100%),
+        radial-gradient(24% 28% at 62% 37%, #ae9df0b0 0%, #073aff00 100%),
+        radial-gradient(20% 26% at 34% 106%, #bbcce396 0%, #073aff00 100%),
+        radial-gradient(63% 34% at 99% 107%, #bbcce3 0%, #073aff00 100%),
+        radial-gradient(33% 30% at -1% 104%, #bbcce3 0%, #073aff00 100%),
+        radial-gradient(16% 32% at 3% 76%, #bbcce3d4 0%, #073aff00 100%),
+        linear-gradient(68deg, #8c8fde 0%, #8c8fde 68%);
+}
+
+#grain-background {
+    position: absolute;
+    z-index: 2;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/40550ab9-0dde-4376-ae73-77355bb45d73/d37pwfa-82dd8ce8-a772-4e1d-9f03-e355a2aa1722.jpg/v1/fill/w_1024,h_768,q_75,strp/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvNDA1NTBhYjktMGRkZS00Mzc2LWFlNzMtNzczNTViYjQ1ZDczXC9kMzdwd2ZhLTgyZGQ4Y2U4LWE3NzItNGUxZC05ZjAzLWUzNTVhMmFhMTcyMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.SS6BpDtRHP9Z2ROaHftKv8hr6_LhiVjOB8i0WiXuyKw);
+    background-size: cover;
+    mix-blend-mode: overlay;
+    opacity: 0.2;
+    height: 100vh;
+    width: 100vw;
+}
+
+#scroll-container {
+    z-index: 3;
+    position: absolute;
+    margin-top: 6%;
+    margin-inline: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 80%;
+    border-radius: 25px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.text-container {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    h1 {
+        font-weight: 500;
+        font-size: 3vw;
+        margin-bottom: 2px;
+    }
+
+    span {
+        width: 65%;
+        font-weight: lighter;
+        font-size: medium;
+    }
+
+    div {
+        display: flex;
+        align-items: flex-end;
+
+        margin-top: 6px;
+
+        div {
+            margin-right: 2vw;
+            cursor: pointer;
+            span {
+                display: inline-block;
+                line-height: 10px;
+                font-size: 1.1vw;
+            }
+        }
+    }
+    svg {
+        margin-right: 6px;
+        width: 1vw;
+        color: white;
+    }
+}
+
+#ironic-phrase {
+    cursor: pointer;
+
+    &:hover {
+        font-weight: 400;
+    }
+}
+
+.project {
+    &__information {
+        padding: 3% 3.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: 76%;
+        background: rgba(35, 35, 35, 0.05);
+        backdrop-filter: blur(3.5px);
+        -webkit-backdrop-filter: blur(3.5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 3rem;
+        background-size: 300% !important;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: Gradient 10s ease infinite !important;
+        -moz-animation: Gradient 10s ease infinite !important;
+        animation: Gradient 10s ease infinite !important;
+
+        &--billable {
+            background-image: linear-gradient(-45deg, #00c6ae, #0b2b27);
+        }
+
+        &--mywund {
+            background-image: linear-gradient(-45deg, #564f83, #887ae1);
+        }
+
+        &--prp {
+            background-image: linear-gradient(
+                -45deg,
+                #ae8fba,
+                #a659b1,
+                #f4b9f9
+            );
+        }
+
+        &--nurasign {
+            background-image: linear-gradient(
+                -45deg,
+                #ae8fba,
+                #a659b1,
+                #f4b9f9
+            );
+        }
+
+        &--sisefar {
+            background-image: linear-gradient(-45deg, #000336, #253d3d);
+        }
+
+        &--ley {
+            background-image: linear-gradient(-45deg, #2061b0, #2e4c4c);
+        }
+    }
+
+    &__description {
+        color: white;
+        padding: 2rem 0;
+        font-size: 1.6rem;
+    }
+
+    &__photos {
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+        width: 40%;
+        height: 100%;
+        position: relative;
+
+        &-platforms {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            bottom: 4rem;
+            right: 1rem;
+            z-index: 10;
+            width: 8rem;
+
+            &-icon {
+                user-select: none;
+                cursor: pointer;
+                color: white;
+                opacity: 0.3;
+                font-size: 2.5rem;
+
+                &--active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__technologies {
+        h3 {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        & > div {
+            display: flex;
+        }
+
+        & > div svg {
+            height: 3.5rem;
+            width: 3.5rem;
+            filter: grayscale(1);
+            margin-right: 2rem;
+            transition: all 500ms ease 0s;
+            mix-blend-mode: luminosity;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+                filter: grayscale(0);
+                transition: all 500ms ease 0s;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__technologie {
+        display: flex;
+        position: relative;
+
+        &-pill {
+            background: rgba(0, 0, 0, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 35px;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 0.5rem 1rem;
+            color: #fff;
+            font-size: 0.9rem;
+            font-style: normal;
+            font-weight: 500;
+            visibility: hidden;
+            z-index: 3;
+            position: absolute;
+            object-fit: cover;
+            box-sizing: border-box;
+            white-space: nowrap;
+
+            pointer-events: none;
+        }
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .project {
+        &__description {
+            font-size: 1rem;
+        }
+
+        &__photos {
+            padding-top: 4rem;
+
+            &-platforms {
+                bottom: 2.5rem;
+                right: 1rem;
+                width: 4rem;
+
+                &-icon {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
