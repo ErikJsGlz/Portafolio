@@ -54,6 +54,7 @@ import "swiper/css";
 function App() {
     const [canShowMobilePRP, setCanShowMobilePRP] = useState<boolean>(true);
     const [canShowMobileBilla, setCanShowMobileBilla] = useState<boolean>(true);
+    const [currentSection, setCurrentSection] = useState<string>("about-me");
 
     const [currentDesktopPRP, setCurrentDesktopPRP] = useState<number>(0);
     const [currentDesktopBillable, setCurrentDesktopBillable] =
@@ -139,10 +140,23 @@ function App() {
         sections.forEach((section: any, index: number) => {
             const sectionTop = section.offsetTop;
             const sectionBottom = sectionTop + section.offsetHeight;
+
             if (windowMiddle >= sectionTop && windowMiddle <= sectionBottom) {
                 changecolor(section.dataset.project);
+
+                if (index === 0) {
+                    setCurrentSection("about-me");
+                } else if (index === 7) {
+                    setCurrentSection("experience");
+                } else {
+                    setCurrentSection("projects");
+                }
             }
         });
+    };
+
+    const scrollTo = (name: string): void => {
+        document.getElementById(name)?.scrollIntoView({ behavior: "smooth" });
     };
 
     useEffect(() => {
@@ -226,6 +240,7 @@ function App() {
                 : 0
         );
     };
+
     const updateNurasignDesktop = (): void => {
         setCurrentDesktopNurasign(
             currentDesktopNurasign < desktopNurasignImages.length - 1
@@ -233,6 +248,7 @@ function App() {
                 : 0
         );
     };
+
     const updateSisefarDesktop = (): void => {
         setCurrentDesktopSisefar(
             currentDesktopSisefar < desktopSisefarImages.length - 1
@@ -240,6 +256,7 @@ function App() {
                 : 0
         );
     };
+
     const updateLeyDesktop = (): void => {
         setCurrentDesktopLey(
             currentDesktopLey < desktopLeyImages.length - 1
@@ -250,7 +267,10 @@ function App() {
 
     return (
         <div id={"container-app"} className="App">
-            <Header />
+            <Header
+                currentSection={currentSection}
+                navigateTo={(name: string) => scrollTo(name)}
+            />
             <div id="grain-background"></div>
             {/* <div id="first-sphere-animation" className="sphere"></div> */}
             {/* <div id="second-sphere-animation" className="sphere"></div> */}
@@ -278,7 +298,11 @@ function App() {
                         </div> */}
                     </div>
                 </div>
-                <div data-project={"prp"} className="section project">
+                <div
+                    id="projects"
+                    data-project={"prp"}
+                    className="section project"
+                >
                     <div className="project__information">
                         <div>
                             <h1 className="project__name project__name--prp">
@@ -830,8 +854,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-
-                <div className="section">
+                <div id="experience" className="section">
                     <div id="timeline-content">
                         <ul className="timeline">
                             <li className="event" data-date="2022-2024">
