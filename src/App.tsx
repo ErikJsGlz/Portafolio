@@ -929,6 +929,22 @@ function App() {
                         </ul>
                     </div>
                 </div>
+                {/* <div className="section">
+                    <div className="information-slide">
+                        <div className="information-slide__education">
+                            <h2>Educación</h2>
+                            <div className="information-slide__education-content">
+                                <h3>
+                                    Ingeniería en Tecnologías Computacionales
+                                </h3>
+                                <h4>
+                                    ITESM <span>2019-2023</span>
+                                </h4>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div> */}
             </div>
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         </div>

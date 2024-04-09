@@ -1,3 +1,5 @@
+@import "variables";
+
 .App {
     overflow: hidden;
     position: relative;
@@ -184,7 +186,6 @@
         div {
             margin-right: 2vw;
             cursor: pointer;
-
             span {
                 display: inline-block;
                 line-height: 10px;
@@ -192,12 +193,10 @@
             }
         }
     }
-
     svg {
         margin-right: 6px;
         width: 1vw;
         color: white;
-        height: 15px;
     }
 }
 
@@ -280,7 +279,7 @@
     &__description {
         color: white;
         padding: 2rem 0;
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     &__photos {
@@ -385,12 +384,64 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media (min-height: $layout-s-height-desktop) {
     .project {
         &__description {
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
+        &__photos {
+            height: 35rem;
+
+            &-desktop {
+                height: 30rem;
+
+                & > img {
+                    height: 15rem;
+
+                    &:hover {
+                        height: 25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .horizontal-swiper .swiper-slide {
+        height: 30rem;
+    }
+}
+
+@media (min-height: $layout-m-height-desktop) {
+    .project {
+        &__description {
+            font-size: 1.6rem;
+        }
+
+        &__photos {
+            height: 40rem;
+
+            &-desktop {
+                height: 35rem;
+
+                & > img {
+                    height: 18rem;
+
+                    &:hover {
+                        height: 28rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .horizontal-swiper .swiper-slide {
+        height: 35rem;
+    }
+}
+
+@media (min-width: $layout-xs-width-desktop) {
+    .project {
         &__photos {
             padding-top: 4rem;
 
