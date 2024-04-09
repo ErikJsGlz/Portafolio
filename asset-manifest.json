@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.468827a9.css",
-    "main.js": "/static/js/main.e4cd33ee.js",
+    "main.js": "/static/js/main.4828367d.js",
     "static/js/787.a2d1897a.chunk.js": "/static/js/787.a2d1897a.chunk.js",
     "static/media/sisefar_desktop_03.png": "/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
     "static/media/sisefar_desktop_01.png": "/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
@@ -48,11 +48,11 @@
     "static/media/flutter_logo.svg": "/static/media/flutter_logo.af8081c858f0cd217a9d9d6e636ad937.svg",
     "static/media/mail_icon.svg.svg": "/static/media/mail_icon.svg.5f400b9b67fd64e8b1d62a6485701f43.svg",
     "main.468827a9.css.map": "/static/css/main.468827a9.css.map",
-    "main.e4cd33ee.js.map": "/static/js/main.e4cd33ee.js.map",
+    "main.4828367d.js.map": "/static/js/main.4828367d.js.map",
     "787.a2d1897a.chunk.js.map": "/static/js/787.a2d1897a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.468827a9.css",
-    "static/js/main.e4cd33ee.js"
+    "static/js/main.4828367d.js"
   ]
 }
