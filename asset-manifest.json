@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.766000f0.css",
-    "main.js": "/static/js/main.f384c9d5.js",
+    "main.css": "/static/css/main.808c8ca6.css",
+    "main.js": "/static/js/main.c1e069fa.js",
     "static/js/787.a2d1897a.chunk.js": "/static/js/787.a2d1897a.chunk.js",
     "static/media/sisefar_desktop_03.png": "/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
     "static/media/sisefar_desktop_01.png": "/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
@@ -46,13 +46,13 @@
     "static/media/python_logo.svg": "/static/media/python_logo.b31571e63f842610bdfbd0f3dfe3f316.svg",
     "index.html": "/index.html",
     "static/media/flutter_logo.svg": "/static/media/flutter_logo.af8081c858f0cd217a9d9d6e636ad937.svg",
-    "static/media/mail_icon.svg.svg": "/static/media/mail_icon.svg.5f400b9b67fd64e8b1d62a6485701f43.svg",
-    "main.766000f0.css.map": "/static/css/main.766000f0.css.map",
-    "main.f384c9d5.js.map": "/static/js/main.f384c9d5.js.map",
+    "static/media/mail_icon.svg.svg": "/static/media/mail_icon.svg.83797fa39519f959c8ab051aaa0f696a.svg",
+    "main.808c8ca6.css.map": "/static/css/main.808c8ca6.css.map",
+    "main.c1e069fa.js.map": "/static/js/main.c1e069fa.js.map",
     "787.a2d1897a.chunk.js.map": "/static/js/787.a2d1897a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.766000f0.css",
-    "static/js/main.f384c9d5.js"
+    "static/css/main.808c8ca6.css",
+    "static/js/main.c1e069fa.js"
   ]
 }
