@@ -1,0 +1,17 @@
+@import '../styles/functions.scss';
+@import '../variables';
+
+.header {
+	flex-direction: row;
+	justify-content: space-between;
+	width: 93vw;
+	padding: 3rem;
+	position: absolute;
+	gap: 5rem;
+	z-index: 3;
+
+	& > .MuiTypography-root {
+		flex: 1;
+		@include custom-font($font-primary, 30px, 400, start, #333333);
+	}
+}

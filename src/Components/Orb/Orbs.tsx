@@ -2,8 +2,10 @@ import { useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
 import './Orbs.scss';
 import { Orb } from './Orb';
+import { RandomOrb } from './RandomOrb';
 
-const ORB_COUNT = 5;
+const MOUSE_ORB_COUNT = 5;
+const RANDOM_ORB_COUNT = 10;
 
 export const Orbs = () => {
 	const mouseX = useMotionValue(0);
@@ -11,7 +13,7 @@ export const Orbs = () => {
 
 	useEffect(() => {
 		const onMove = (e: MouseEvent) => {
-			mouseX.set(e.clientX - 0);
+			mouseX.set(e.clientX);
 			mouseY.set(e.clientY - 300);
 		};
 
@@ -21,13 +23,21 @@ export const Orbs = () => {
 
 	return (
 		<div className="orbs-wrapper">
-			{Array.from({ length: ORB_COUNT }).map((_, i) => (
+			{/* 🖱 Orbs que siguen al mouse */}
+			{Array.from({ length: MOUSE_ORB_COUNT }).map((_, i) => (
 				<Orb
-					key={i}
+					key={`mouse-${i}`}
 					index={i}
 					mouseX={mouseX}
 					mouseY={mouseY}
+					height={200}
+					width={200}
 				/>
+			))}
+
+			{/* 🎲 Orbs aleatorios */}
+			{Array.from({ length: RANDOM_ORB_COUNT }).map((_, i) => (
+				<RandomOrb key={`random-${i}`} />
 			))}
 		</div>
 	);

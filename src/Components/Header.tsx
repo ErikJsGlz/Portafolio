@@ -1,12 +1,15 @@
-import { Box, Stack } from '@mui/material';
+import { Box, Stack, Typography } from '@mui/material';
+
+import './Header.scss';
 
 export default function Header() {
 	const currentYear: string = new Date().getFullYear().toString();
 
 	return (
-		<Stack flexDirection={'row'}>
-			<Box>Erik González Lucas</Box>
-			<Box>{currentYear}</Box>
+		<Stack className="header">
+			<Typography>Erik González Lucas</Typography>
+			<Typography style={{ textAlign: 'center' }}>Portfolio</Typography>
+			<Typography style={{ textAlign: 'end' }}>{currentYear}</Typography>
 		</Stack>
 	);
 }

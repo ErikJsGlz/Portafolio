@@ -6,7 +6,13 @@ type OrbProps = {
 	mouseY: MotionValue<number>;
 };
 
-export const Orb = ({ index, mouseX, mouseY }: OrbProps) => {
+export const Orb = ({
+	index,
+	mouseX,
+	mouseY,
+	height,
+	width,
+}: OrbProps & { height: number; width: number }) => {
 	// replicando stagger:-0.02 → más atrás = más damping
 	const x = useSpring(mouseX, {
 		stiffness: 120,
@@ -22,8 +28,8 @@ export const Orb = ({ index, mouseX, mouseY }: OrbProps) => {
 
 	return (
 		<motion.div
-			className="orb"
-			style={{ x, y }}
+			className="orb orb--amber"
+			style={{ x, y, height, width }}
 		></motion.div>
 	);
 };
