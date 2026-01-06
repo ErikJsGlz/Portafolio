@@ -1,0 +1,18 @@
+/// Mixin para aplicar estilos de fuente personalizados
+/// @param {string} $family - Familia de fuente a utilizar
+/// @param {number} $size [14px] - Tamaño de la fuente
+/// @param {number} $weight - Grosor de la fuente (ej: 400, 700, bold)
+/// @param {string} $aligh [center] - Alineación del texto (left, center, right, justify)
+/// @param {color} $color - Color del texto
+/// @param {number} $line [22px] - Altura de línea
+/// @example
+///   @include custom-font('Arial', 16px, 600, right, #333333, 24px)
+@mixin custom-font($family, $size: 14px, $weight, $aligh: center, $color, $line: 22px) {
+	font-family: $family;
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $line;
+	color: $color;
+	text-align: $aligh;
+	text-transform: none;
+}
