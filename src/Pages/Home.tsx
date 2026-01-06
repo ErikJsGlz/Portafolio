@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
-import Header from '../Components/Header';
+
+import Header from '../Components/Header/Header';
 import { Orbs } from '../Components/Orb/Orbs';
 
 import './Home.scss';

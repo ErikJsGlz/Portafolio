@@ -1,10 +1,11 @@
 import { useMotionValue } from 'framer-motion';
 import { useEffect } from 'react';
-import './Orbs.scss';
-import { Orb } from './Orb';
-import { RandomOrb } from './RandomOrb';
 
-const MOUSE_ORB_COUNT = 5;
+import { RandomOrb } from './RandomOrb';
+import { Orb } from './Orb';
+import './Orbs.scss';
+
+const MOUSE_ORB_COUNT = 2;
 const RANDOM_ORB_COUNT = 10;
 
 export const Orbs = () => {
