@@ -2,6 +2,7 @@ import { Box, Button, Stack, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
+import { useHomeContext } from '../../Pages/Provider/useHomeContext';
 import './Header.scss';
 
 export default function Header() {
@@ -13,18 +14,24 @@ export default function Header() {
 		setOpened((prev) => !prev);
 	};
 
+	const { setCurrentProject } = useHomeContext();
+
 	return (
 		<Stack className="header">
-			<Typography className="header__label">Erik González Lucas</Typography>
+			<Box>
+				<Button className="header__label">Erik González Lucas</Button>
+			</Box>
 
-			<Typography
-				className="header__label"
-				style={{ textAlign: 'center' }}
-			>
-				Portfolio
-			</Typography>
+			<Box justifyContent={'center'}>
+				<Button
+					className="header__label"
+					onClick={() => setCurrentProject(0)}
+				>
+					Portfolio
+				</Button>
+			</Box>
 
-			<Box flex={1}>
+			<Box justifyContent={'flex-end'}>
 				<Button
 					disableRipple
 					className={'header__button'}
@@ -54,13 +61,14 @@ export default function Header() {
 							</Typography>
 							<Button
 								className="header__bubble__body__content__project"
-								onClick={() => {
-									console.log('entra');
-								}}
+								onClick={() => setCurrentProject(1)}
 							>
 								MyWund
 							</Button>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(2)}
+							>
 								BillableHours
 							</Button>
 						</Stack>
@@ -69,13 +77,22 @@ export default function Header() {
 							<Typography className="header__bubble__body__content__year">
 								2023-2024
 							</Typography>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(3)}
+							>
 								Ley Urgencias
 							</Button>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(4)}
+							>
 								Project Requisition Process
 							</Button>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(5)}
+							>
 								Landing Sisefar
 							</Button>
 						</Stack>
@@ -84,13 +101,22 @@ export default function Header() {
 							<Typography className="header__bubble__body__content__year">
 								2025
 							</Typography>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(6)}
+							>
 								Landing CEI
 							</Button>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(7)}
+							>
 								Nurasign
 							</Button>
-							<Button className="header__bubble__body__content__project">
+							<Button
+								className="header__bubble__body__content__project"
+								onClick={() => setCurrentProject(8)}
+							>
 								Promptxr
 							</Button>
 						</Stack>

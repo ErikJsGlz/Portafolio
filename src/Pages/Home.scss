@@ -15,6 +15,7 @@
 		@include custom-font($font-secundary, 140px, 700, start, #333333, $line: 110px);
 		letter-spacing: -0.04em;
 		user-select: none;
+		text-transform: uppercase;
 	}
 }
 

@@ -24,9 +24,9 @@ export const Orbs = () => {
 
 	return (
 		<div className="orbs-wrapper">
-			{/* 🖱 Orbs que siguen al mouse */}
 			{Array.from({ length: MOUSE_ORB_COUNT }).map((_, i) => (
 				<Orb
+					show={true}
 					key={`mouse-${i}`}
 					index={i}
 					mouseX={mouseX}
@@ -36,7 +36,6 @@ export const Orbs = () => {
 				/>
 			))}
 
-			{/* 🎲 Orbs aleatorios */}
 			{Array.from({ length: RANDOM_ORB_COUNT }).map((_, i) => (
 				<RandomOrb key={`random-${i}`} />
 			))}
