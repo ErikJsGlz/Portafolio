@@ -1,9 +1,11 @@
 @import '../styles/functions.scss';
 @import '../variables';
+
 .home {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	overflow: hidden;
 
 	&__title {
 		position: absolute;
