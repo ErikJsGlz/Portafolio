@@ -16,6 +16,54 @@
 		letter-spacing: -0.04em;
 		user-select: none;
 		text-transform: uppercase;
+		white-space: pre-line;
+	}
+
+	&__body {
+		position: absolute;
+		top: 12rem;
+		z-index: 2;
+		margin: 5rem 0 0 5rem;
+		padding: 2rem;
+		display: flex;
+		width: 50rem;
+
+		background-color: rgba(255, 255, 255, 0.38);
+		background: repeating-linear-gradient(
+			45deg,
+			rgba(255, 255, 255, 0.5),
+			rgba(0, 0, 0, 0.1),
+			rgba(255, 255, 255, 0.4) 1px
+		);
+		backdrop-filter: blur(25px);
+		filter: blur(0.5px);
+		border-radius: 8px;
+		mix-blend-mode: darken;
+
+		& > .MuiTypography-root {
+			@include custom-font($font-primary, 34px, 500, start, #333333, 32px);
+			white-space: pre-line;
+			mix-blend-mode: darken;
+		}
+	}
+
+	&__image {
+		height: 25rem;
+		width: fit-content;
+		cursor: pointer;
+		user-select: none;
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+
+		&-container {
+			position: absolute;
+			top: 12rem;
+			z-index: 2;
+			right: 5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 }
 
@@ -36,7 +84,6 @@
 		position: absolute;
 		width: calc(100% - 1px);
 		height: calc(100% - 1px);
-
 		filter: blur(2px);
 		background: repeating-linear-gradient(
 			0deg,
