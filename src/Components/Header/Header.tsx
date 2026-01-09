@@ -87,7 +87,7 @@ export default function Header() {
 								className="header__bubble__body__content__project"
 								onClick={() => setCurrentProject(4)}
 							>
-								Project Requisition Process
+								Personnel Requisition Process
 							</Button>
 							<Button
 								className="header__bubble__body__content__project"
