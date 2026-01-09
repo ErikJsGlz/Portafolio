@@ -12,7 +12,11 @@
 		bottom: 0;
 		z-index: 3;
 		padding: 5rem;
-		@include custom-font($font-secundary, 140px, 700, start, #333333, $line: 110px);
+		font-size: 140px;
+		font-weight: 700;
+		text-align: start;
+		color: #333333;
+		line-height: 110px;
 		letter-spacing: -0.04em;
 		user-select: none;
 		text-transform: uppercase;
