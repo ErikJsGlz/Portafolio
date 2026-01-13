@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.31012d09.css",
-    "main.js": "/Portafolio/static/js/main.04a60722.js",
+    "main.css": "/Portafolio/static/css/main.a2a78cd4.css",
+    "main.js": "/Portafolio/static/js/main.11e370b1.js",
     "static/js/453.aae66e54.chunk.js": "/Portafolio/static/js/453.aae66e54.chunk.js",
     "static/media/sisefar_desktop_03.png": "/Portafolio/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
     "static/media/sisefar_desktop_01.png": "/Portafolio/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
@@ -31,13 +31,22 @@
     "static/media/billa_mobile_01.png": "/Portafolio/static/media/billa_mobile_01.8ce37b39a346fc32b322.png",
     "static/media/billa_mobile_05.png": "/Portafolio/static/media/billa_mobile_05.70252017728789c9edb3.png",
     "static/media/prp_mobile_01.png": "/Portafolio/static/media/prp_mobile_01.81d98db51b30610d4507.png",
+    "static/media/mysql_logo.svg": "/Portafolio/static/media/mysql_logo.a7eea036395c9073d715a5ad9c591580.svg",
+    "static/media/sass_logo.svg": "/Portafolio/static/media/sass_logo.2f9a95ade3399a116b06d8a216d14a3d.svg",
+    "static/media/react_logo.svg": "/Portafolio/static/media/react_logo.30981dea547b155eb92a484c5b33b5bc.svg",
+    "static/media/node_logo.svg": "/Portafolio/static/media/node_logo.4d3b4b28f4ec34bba09d462d8feb1ec9.svg",
+    "static/media/typescript_logo.svg": "/Portafolio/static/media/typescript_logo.36ef427de1ff472a73fa9cb65b180631.svg",
+    "static/media/dart_logo.svg": "/Portafolio/static/media/dart_logo.b140fda00132359bc3e87e1ede14c03b.svg",
+    "static/media/azure_logo.svg": "/Portafolio/static/media/azure_logo.8efaf6ac6b508f184a33930ed576cc6a.svg",
+    "static/media/python_logo.svg": "/Portafolio/static/media/python_logo.404eb732f62b5fc70d1387f1a620c11f.svg",
     "index.html": "/Portafolio/index.html",
-    "main.31012d09.css.map": "/Portafolio/static/css/main.31012d09.css.map",
-    "main.04a60722.js.map": "/Portafolio/static/js/main.04a60722.js.map",
+    "static/media/flutter_logo.svg": "/Portafolio/static/media/flutter_logo.2473d9e6eccd32f7638a8adb8087cce0.svg",
+    "main.a2a78cd4.css.map": "/Portafolio/static/css/main.a2a78cd4.css.map",
+    "main.11e370b1.js.map": "/Portafolio/static/js/main.11e370b1.js.map",
     "453.aae66e54.chunk.js.map": "/Portafolio/static/js/453.aae66e54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31012d09.css",
-    "static/js/main.04a60722.js"
+    "static/css/main.a2a78cd4.css",
+    "static/js/main.11e370b1.js"
   ]
 }
