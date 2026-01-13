@@ -109,7 +109,10 @@
 				}
 
 				&__project {
-					@include custom-font($font-secundary, 20px, 700, start, #333333);
+					font-size: 20px;
+					font-weight: 700;
+					text-align: start;
+					color: #333333;
 					background-color: transparent;
 
 					&::after {
