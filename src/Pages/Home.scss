@@ -12,15 +12,20 @@
 		bottom: 0;
 		z-index: 3;
 		padding: 5rem;
-		font-size: 140px;
+		font-size: 100px;
 		font-weight: 700;
 		text-align: start;
 		color: #333333;
-		line-height: 110px;
+		line-height: 80px;
 		letter-spacing: -0.04em;
 		user-select: none;
 		text-transform: uppercase;
 		white-space: pre-line;
+
+		@media (min-width: $layout-XL-width-desktop) {
+			font-size: 140px;
+			line-height: 110px;
+		}
 	}
 
 	&__body {
@@ -30,7 +35,7 @@
 		margin: 5rem 0 0 5rem;
 		padding: 2rem;
 		display: flex;
-		width: 50rem;
+		width: 28rem;
 
 		background-color: rgba(255, 255, 255, 0.38);
 		background: repeating-linear-gradient(
@@ -44,6 +49,14 @@
 		border-radius: 8px;
 		mix-blend-mode: darken;
 
+		@media (min-width: $layout-s-width-desktop) {
+			width: 35rem;
+		}
+
+		@media (min-width: $layout-XL-width-desktop) {
+			width: 50rem;
+		}
+
 		& > .MuiTypography-root {
 			@include custom-font($font-primary, 34px, 500, start, #333333, 32px);
 			white-space: pre-line;
@@ -52,22 +65,43 @@
 	}
 
 	&__image {
-		height: 25rem;
-		width: fit-content;
+		height: 19rem;
 		cursor: pointer;
 		user-select: none;
 		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 		border-radius: 8px;
 
+		@media (min-width: $layout-m-width-desktop) {
+			height: 20rem;
+		}
+
+		@media (min-width: $layout-XL-width-desktop) {
+			height: 25rem;
+		}
+
+		&--mobile {
+			height: 25rem;
+		}
+
 		&-container {
 			position: absolute;
-			width: 50rem;
-			top: 12rem;
+			width: 38rem;
+			top: 15rem;
+			right: 0;
 			z-index: 2;
-			right: 5rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@media (min-width: $layout-s-width-desktop) {
+				width: 40rem;
+				right: 3rem;
+			}
+
+			@media (min-width: $layout-XL-width-desktop) {
+				width: 50rem;
+				right: 5rem;
+			}
 		}
 	}
 }

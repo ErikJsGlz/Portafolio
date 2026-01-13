@@ -43,6 +43,7 @@ export interface HomeContextType {
 	currentInformationLabel: string;
 	onClickImage: () => void;
 	currentImage: string | undefined;
+	imageClassName: string;
 }
 
 export function HomeProvider({ children }: { children: React.ReactNode }) {
@@ -65,7 +66,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		'',
 		'Software para registrar y visualizar la evolución de heridas de pacientes\nColaboré con un equipo de enfermeras de Chile. Desarrollé el Frontend con Flutter y Backend con Flask.',
 		'Pequeño software para registrar las horas invertidas de un colaborador en un proyecto específico.\nTrabajé principalmente en el Backend con NodeJS e hice algunas funcionalidades del Frontend.',
-		'Formulario para regisrtar la estancia hospitalaria de un paciente\nMe encargué del diseño del sistema y el desarrollo del Frontend y del Backend.',
+		'Formulario para registrar la estancia hospitalaria de un paciente\nMe encargué del diseño del sistema y el desarrollo del Frontend y del Backend.',
 		'Proyecto para gestionar requisiciones de personal haciendo uso de aprobaciones escalonadas.\nTrabajé en el diseño de la plataforma, en levantar los recursos y el desarrollo del Frontend, de Web y Mobile y del Backend.',
 		'Una Landing Page para el sistema SISEFARPRO, un software para la gestión y seguimiento de medicamentos.\nMe encargué del desarrollo del Frontend.',
 		'Una Landing Page para la compañía CHRISTUS CEI.\nMe encargué del desarrollo de toda la página así como de toda la funcionalidad.',
@@ -132,6 +133,23 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		setCurrentImageIndex(0);
 	}, [currentProjectIndex]);
 
+	const mobileImagesMap: Record<number, string[]> = {
+		1: [MyWund01, MyWund02, MyWund03, MyWund04, MyWund05], // MyWund (mobile)
+		2: [Billable04, Billable05, Billable06, Billable07, Billable08], // Billable mobile
+		4: [Prp05, Prp06, Prp07, Prp08, Prp09], // PRP mobile
+	};
+
+	const isCurrentImageMobile = () => {
+		const currentImages = mobileImagesMap[currentProjectIndex];
+		if (!currentImages || !currentImage()) return false;
+
+		return currentImages.includes(currentImage() as string);
+	};
+
+	const getImageClassName = () => {
+		return isCurrentImageMobile() ? 'home__image--mobile' : 'home__image--desktop';
+	};
+
 	const contextValue = {
 		currentProjectIndex,
 		setCurrentProject,
@@ -140,6 +158,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		currentInformationLabel: informationLabels[currentProjectIndex],
 		onClickImage,
 		currentImage: currentImage(),
+		imageClassName: getImageClassName(),
 	};
 
 	return <HomeContext.Provider value={contextValue}>{children}</HomeContext.Provider>;

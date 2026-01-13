@@ -62,7 +62,10 @@
 		}
 
 		& > .MuiTypography-root {
-			@include custom-font($font-primary, 30px, 400, start, #333333);
+			font-size: 30px;
+			font-weight: 400;
+			text-align: start;
+			color: #333333;
 		}
 	}
 

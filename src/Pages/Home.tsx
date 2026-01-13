@@ -14,6 +14,7 @@ function Component() {
 		currentInformationLabel,
 		currentImage,
 		onClickImage,
+		imageClassName,
 	} = useHomeContext();
 
 	return (
@@ -71,7 +72,7 @@ function Component() {
 							src={currentImage}
 							onClick={onClickImage}
 							whileHover={{ scale: 1.2 }}
-							className="home__image"
+							className={`home__image ${imageClassName}`}
 							initial={{
 								translateX: -100,
 								opacity: 0,
