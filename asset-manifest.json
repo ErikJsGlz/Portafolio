@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.21a8f5d1.css",
-    "main.js": "/Portafolio/static/js/main.75dafa79.js",
+    "main.css": "/Portafolio/static/css/main.7cb5fce6.css",
+    "main.js": "/Portafolio/static/js/main.04a60722.js",
     "static/js/453.aae66e54.chunk.js": "/Portafolio/static/js/453.aae66e54.chunk.js",
     "static/media/sisefar_desktop_03.png": "/Portafolio/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
     "static/media/sisefar_desktop_01.png": "/Portafolio/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
@@ -32,12 +32,12 @@
     "static/media/billa_mobile_05.png": "/Portafolio/static/media/billa_mobile_05.70252017728789c9edb3.png",
     "static/media/prp_mobile_01.png": "/Portafolio/static/media/prp_mobile_01.81d98db51b30610d4507.png",
     "index.html": "/Portafolio/index.html",
-    "main.21a8f5d1.css.map": "/Portafolio/static/css/main.21a8f5d1.css.map",
-    "main.75dafa79.js.map": "/Portafolio/static/js/main.75dafa79.js.map",
+    "main.7cb5fce6.css.map": "/Portafolio/static/css/main.7cb5fce6.css.map",
+    "main.04a60722.js.map": "/Portafolio/static/js/main.04a60722.js.map",
     "453.aae66e54.chunk.js.map": "/Portafolio/static/js/453.aae66e54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21a8f5d1.css",
-    "static/js/main.75dafa79.js"
+    "static/css/main.7cb5fce6.css",
+    "static/js/main.04a60722.js"
   ]
 }
