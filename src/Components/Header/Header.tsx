@@ -19,7 +19,12 @@ export default function Header() {
 	return (
 		<Stack className="header">
 			<Box>
-				<Button className="header__label">Erik González Lucas</Button>
+				<Button
+					className="header__label"
+					onClick={() => setCurrentProject(9)}
+				>
+					Erik González Lucas
+				</Button>
 			</Box>
 
 			<Box justifyContent={'center'}>

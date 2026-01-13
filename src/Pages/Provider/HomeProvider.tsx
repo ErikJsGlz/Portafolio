@@ -2,6 +2,16 @@ import { useEffect, useState } from 'react';
 
 import { HomeContext } from './HomeContext';
 
+import AzureLogo from '../../assets/icons/azure_logo.svg';
+import DartLogo from '../../assets/icons/dart_logo.svg';
+import FlutterLogo from '../../assets/icons/flutter_logo.svg';
+import MySQLLogo from '../../assets/icons/mysql_logo.svg';
+import NodeLogo from '../../assets/icons/node_logo.svg';
+import PythonLogo from '../../assets/icons/python_logo.svg';
+import ReactLogo from '../../assets/icons/react_logo.svg';
+import SassLogo from '../../assets/icons/sass_logo.svg';
+import TypescriptLogo from '../../assets/icons/typescript_logo.svg';
+
 import MyWund01 from '../../assets/img/mywund_layout/mywund_mobile_01.png';
 import MyWund02 from '../../assets/img/mywund_layout/mywund_mobile_02.png';
 import MyWund03 from '../../assets/img/mywund_layout/mywund_mobile_03.png';
@@ -44,6 +54,7 @@ export interface HomeContextType {
 	onClickImage: () => void;
 	currentImage: string | undefined;
 	imageClassName: string;
+	logos: string[];
 }
 
 export function HomeProvider({ children }: { children: React.ReactNode }) {
@@ -60,6 +71,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		'Landing\nCEI',
 		'Nurasign',
 		'Promptxr',
+		'Trayectoria',
 	];
 
 	const informationLabels = [
@@ -72,6 +84,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		'Una Landing Page para la compañía CHRISTUS CEI.\nMe encargué del desarrollo de toda la página así como de toda la funcionalidad.',
 		'Proyecto refactorizado desde cero, enfocado a la asignación de enfermeras en centros hospitalarios.\nMe encargué del diseño del Frontend, así como la limpieza y optimización de la base de datos.',
 		'Proyecto refactorizado completamente, enfocado a la realización y validación de protocolos a pacientes.\nMe encargué principalmente en el desarrollo del Frontend y en levantar recursos.',
+		'Soy Ingeniero de Software.\nEgresado del Tec de Monterrey (ITESM) con la distición Líderes del Mañana.',
 	];
 
 	const colorMap: Record<number, string> = {
@@ -84,6 +97,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		6: '--purple',
 		7: '--purple',
 		8: '--blue',
+		9: '',
 	};
 
 	const currentColorOrb = colorMap[currentProjectIndex] || '';
@@ -114,12 +128,24 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		3: leyImages,
 		4: prpImages,
 		5: sisefarImages,
+		9: [],
+	};
+
+	const logos: Record<number, string[]> = {
+		0: [],
+		1: [AzureLogo, DartLogo, FlutterLogo, MySQLLogo, NodeLogo],
+		2: [AzureLogo, DartLogo, FlutterLogo, MySQLLogo, PythonLogo],
+		3: [AzureLogo, DartLogo, FlutterLogo, MySQLLogo, NodeLogo],
+		4: [AzureLogo, DartLogo, FlutterLogo, MySQLLogo, PythonLogo],
+		5: [ReactLogo, SassLogo, TypescriptLogo],
+		6: [ReactLogo, SassLogo, TypescriptLogo],
+		7: [ReactLogo, SassLogo, AzureLogo, TypescriptLogo, MySQLLogo, PythonLogo],
+		8: [ReactLogo, SassLogo, AzureLogo, TypescriptLogo, MySQLLogo, PythonLogo],
+		9: [],
 	};
 
 	const onClickImage = () => {
-		console.log(currentImageIndex);
 		const maxIndex = images[currentProjectIndex]?.length || 0;
-		console.log(maxIndex);
 		setCurrentImageIndex((prev) => (prev + 1) % maxIndex);
 	};
 
@@ -150,6 +176,10 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		return isCurrentImageMobile() ? 'home__image--mobile' : 'home__image--desktop';
 	};
 
+	const getLogos = (): string[] => {
+		return logos[currentProjectIndex];
+	};
+
 	const contextValue = {
 		currentProjectIndex,
 		setCurrentProject,
@@ -159,6 +189,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		onClickImage,
 		currentImage: currentImage(),
 		imageClassName: getImageClassName(),
+		logos: getLogos(),
 	};
 
 	return <HomeContext.Provider value={contextValue}>{children}</HomeContext.Provider>;

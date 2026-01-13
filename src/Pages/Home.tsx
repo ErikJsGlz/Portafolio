@@ -7,6 +7,8 @@ import Header from '../Components/Header/Header';
 import { Orbs } from '../Components/Orb/Orbs';
 import './Home.scss';
 
+import AzureLogo from '../assets/icons/azure_logo.svg';
+
 function Component() {
 	const {
 		currentProjectIndex,
@@ -15,6 +17,7 @@ function Component() {
 		currentImage,
 		onClickImage,
 		imageClassName,
+		logos,
 	} = useHomeContext();
 
 	return (
@@ -31,6 +34,20 @@ function Component() {
 					}}
 				>
 					<Typography>{currentInformationLabel}</Typography>
+
+					<Box className="home__body__logos">
+						{logos.map((logo, index) => (
+							<motion.img
+								key={index}
+								src={logo}
+								alt="Logo"
+								initial={{ opacity: 0, scale: 0.8 }}
+								animate={{ opacity: 1, scale: 1 }}
+								transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+								whileHover={{ scale: 1.2 }}
+							/>
+						))}
+					</Box>
 				</motion.div>
 			</AnimatePresence>
 
