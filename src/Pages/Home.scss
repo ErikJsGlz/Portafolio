@@ -22,7 +22,7 @@
 		text-transform: uppercase;
 		white-space: pre-line;
 
-		@media (min-width: $layout-XL-width-desktop) {
+		@media (min-width: $layout-X-width-desktop) {
 			font-size: 140px;
 			line-height: 110px;
 		}
@@ -53,7 +53,7 @@
 			width: 35rem;
 		}
 
-		@media (min-width: $layout-XL-width-desktop) {
+		@media (min-width: $layout-X-width-desktop) {
 			width: 50rem;
 		}
 
@@ -75,12 +75,16 @@
 			height: 20rem;
 		}
 
-		@media (min-width: $layout-XL-width-desktop) {
+		@media (min-width: $layout-X-width-desktop) {
 			height: 25rem;
 		}
 
 		&--mobile {
 			height: 25rem;
+
+			@media (min-width: $layout-X-width-desktop) {
+				height: 30rem;
+			}
 		}
 
 		&-container {
@@ -98,7 +102,7 @@
 				right: 3rem;
 			}
 
-			@media (min-width: $layout-XL-width-desktop) {
+			@media (min-width: $layout-X-width-desktop) {
 				width: 50rem;
 				right: 5rem;
 			}
