@@ -11,7 +11,7 @@
 	z-index: 3;
 
 	&__label {
-		@include custom-font($font-primary, 30px, 400, start, #333333);
+		@include custom-font($font-primary, 25px, 400, start, #333333);
 		justify-content: start;
 
 		&::after {
@@ -29,6 +29,10 @@
 
 		&:hover::after {
 			transform: scaleX(1);
+		}
+
+		@media (min-width: $desktop) {
+			font-size: 30px;
 		}
 	}
 
@@ -62,10 +66,16 @@
 		}
 
 		& > .MuiTypography-root {
-			font-size: 30px;
+			font-size: 25px;
 			font-weight: 400;
 			text-align: start;
 			color: #333333;
+		}
+
+		@media (min-width: $desktop) {
+			& > .MuiTypography-root {
+				font-size: 30px;
+			}
 		}
 	}
 

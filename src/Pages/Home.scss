@@ -11,16 +11,34 @@
 		position: absolute;
 		bottom: 0;
 		z-index: 3;
-		padding: 5rem;
-		font-size: 100px;
+		padding: 2rem;
+		font-size: 48px;
 		font-weight: 700;
 		text-align: start;
 		color: #333333;
-		line-height: 80px;
+		line-height: 38px;
 		letter-spacing: -0.04em;
 		user-select: none;
 		text-transform: uppercase;
 		white-space: pre-line;
+
+		@media (min-width: $tablet) {
+			font-size: 78px;
+			padding: 3rem;
+			line-height: 58px;
+		}
+
+		@media (min-width: $laptop) {
+			font-size: 85px;
+			padding: 4rem;
+			line-height: 65px;
+		}
+
+		@media (min-width: $desktop) {
+			font-size: 100px;
+			padding: 5rem;
+			line-height: 80px;
+		}
 
 		@media (min-width: $layout-X-width-desktop) {
 			font-size: 120px;
