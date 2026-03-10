@@ -10,6 +10,47 @@
 	gap: 5rem;
 	z-index: 3;
 
+	&__menu {
+		padding: 6rem 3rem 0rem;
+
+		&__container {
+			width: 100vw;
+		}
+
+		&__icon {
+			position: absolute;
+			z-index: 3;
+			right: 0;
+			padding-top: 2rem;
+			padding-right: 2rem;
+
+			& > .MuiSvgIcon-root {
+				font-size: 2.5rem;
+			}
+		}
+
+		&__header {
+			justify-content: space-between;
+
+			&__title {
+				@include custom-font($font-primary, 40px, 400, start, #333333, 50px);
+				margin-bottom: 1rem;
+				width: fit-content;
+			}
+
+			&__year {
+				@include custom-font($font-primary, 28px, 400, start, #333333);
+				margin-block: 1rem;
+			}
+
+			&__option {
+				@include custom-font($font-primary, 20px, 400, start, #333333);
+				margin-bottom: 0.5rem;
+				width: fit-content;
+			}
+		}
+	}
+
 	&__label {
 		@include custom-font($font-primary, 25px, 400, start, #333333);
 		justify-content: start;
