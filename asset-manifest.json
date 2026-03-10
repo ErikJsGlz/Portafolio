@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.a2a78cd4.css",
-    "main.js": "/Portafolio/static/js/main.11e370b1.js",
+    "main.css": "/Portafolio/static/css/main.d77eaf3c.css",
+    "main.js": "/Portafolio/static/js/main.855233bc.js",
     "static/js/453.aae66e54.chunk.js": "/Portafolio/static/js/453.aae66e54.chunk.js",
     "static/media/sisefar_desktop_03.png": "/Portafolio/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
     "static/media/sisefar_desktop_01.png": "/Portafolio/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
@@ -41,12 +41,12 @@
     "static/media/python_logo.svg": "/Portafolio/static/media/python_logo.404eb732f62b5fc70d1387f1a620c11f.svg",
     "index.html": "/Portafolio/index.html",
     "static/media/flutter_logo.svg": "/Portafolio/static/media/flutter_logo.2473d9e6eccd32f7638a8adb8087cce0.svg",
-    "main.a2a78cd4.css.map": "/Portafolio/static/css/main.a2a78cd4.css.map",
-    "main.11e370b1.js.map": "/Portafolio/static/js/main.11e370b1.js.map",
+    "main.d77eaf3c.css.map": "/Portafolio/static/css/main.d77eaf3c.css.map",
+    "main.855233bc.js.map": "/Portafolio/static/js/main.855233bc.js.map",
     "453.aae66e54.chunk.js.map": "/Portafolio/static/js/453.aae66e54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a78cd4.css",
-    "static/js/main.11e370b1.js"
+    "static/css/main.d77eaf3c.css",
+    "static/js/main.855233bc.js"
   ]
 }
