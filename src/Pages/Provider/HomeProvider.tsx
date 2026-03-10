@@ -84,7 +84,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		'Una Landing Page para la compañía CHRISTUS CEI.\nMe encargué del desarrollo de toda la página así como de toda la funcionalidad.',
 		'Proyecto refactorizado desde cero, enfocado a la asignación de enfermeras en centros hospitalarios.\nMe encargué del diseño del Frontend, así como la limpieza y optimización de la base de datos.',
 		'Proyecto refactorizado completamente, enfocado a la realización y validación de protocolos a pacientes.\nMe encargué principalmente en el desarrollo del Frontend y en levantar recursos.',
-		'Soy Ingeniero de Software.\nEgresado del Tec de Monterrey (ITESM) con la distición Líderes del Mañana.',
+		'Soy Ingeniero de Software.\nEgresado del Tec de Monterrey (ITESM) con la distición Líderes del Mañana.\n\n Actualmente trabajo como Consultor Sr. en Desarrollo de Productos de Software.\n\nEscríbeme :)',
 	];
 
 	const colorMap: Record<number, string> = {

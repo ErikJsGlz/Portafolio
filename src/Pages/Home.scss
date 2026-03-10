@@ -12,11 +12,11 @@
 		bottom: 0;
 		z-index: 3;
 		padding: 2rem;
-		font-size: 48px;
+		font-size: 40px;
 		font-weight: 700;
 		text-align: start;
 		color: #333333;
-		line-height: 38px;
+		line-height: 30px;
 		letter-spacing: -0.04em;
 		user-select: none;
 		text-transform: uppercase;
@@ -48,13 +48,13 @@
 
 	&__body {
 		position: absolute;
-		top: 12rem;
-		z-index: 2;
-		margin: 5rem 0 0 5rem;
+		bottom: 4rem;
+		margin-inline: 1rem;
 		padding: 2rem;
 		display: flex;
 		flex-direction: column;
-		width: 28rem;
+		width: calc(100vw - 6rem);
+		z-index: 3;
 
 		background-color: rgba(255, 255, 255, 0.38);
 		background: repeating-linear-gradient(
@@ -63,33 +63,25 @@
 			rgba(0, 0, 0, 0.1),
 			rgba(255, 255, 255, 0.4) 1px
 		);
-		backdrop-filter: blur(25px);
+		backdrop-filter: blur(80px);
 		filter: blur(0.5px);
 		border-radius: 8px;
 		mix-blend-mode: darken;
 
-		@media (min-width: $layout-s-width-desktop) {
-			width: 35rem;
-		}
-
-		@media (min-width: $layout-X-width-desktop) {
-			width: 50rem;
-		}
-
 		& > .MuiTypography-root {
-			@include custom-font($font-primary, 34px, 500, start, #333333, 32px);
+			@include custom-font($font-primary, 18px, 500, start, #333333, 20px);
 			white-space: pre-line;
 			mix-blend-mode: darken;
 		}
 
 		&__logos {
 			display: flex;
-			height: 5rem;
 			width: 100%;
-			margin-top: 2rem;
+			margin-top: 1rem;
+			justify-content: space-between;
 
 			& > img {
-				width: 8rem;
+				width: 2.5rem;
 				filter: grayscale(1);
 				mix-blend-mode: luminosity;
 				transition: all 50ms ease 0s;
@@ -103,49 +95,56 @@
 				}
 			}
 		}
+
+		@media (min-height: $layout-xs-height-desktop) {
+			bottom: 5rem;
+		}
+
+		@media (min-width: $tablet) {
+			bottom: 9rem;
+		}
+
+		@media (min-width: $desktop) {
+			max-width: 32rem;
+			bottom: 50%;
+			transform: translateY(50%);
+			margin-inline: 0;
+			left: 2rem;
+			width: 40%;
+		}
 	}
 
 	&__image {
-		height: 19rem;
+		width: auto;
+		height: 100%;
 		cursor: pointer;
 		user-select: none;
 		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 		border-radius: 8px;
-
-		@media (min-width: $layout-m-width-desktop) {
-			height: 20rem;
-		}
-
-		@media (min-width: $layout-X-width-desktop) {
-			height: 25rem;
-		}
+		user-select: none;
 
 		&--mobile {
+			width: auto;
 			height: 25rem;
-
-			@media (min-width: $layout-X-width-desktop) {
-				height: 30rem;
-			}
 		}
 
 		&-container {
 			position: absolute;
-			width: 38rem;
-			top: 15rem;
-			right: 0;
+			box-sizing: border-box;
+			top: 5rem;
 			z-index: 2;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			padding: 0 1rem;
+			width: calc(100vw - 2rem);
+			height: 48%;
 
-			@media (min-width: $layout-s-width-desktop) {
-				width: 40rem;
-				right: 3rem;
-			}
-
-			@media (min-width: $layout-X-width-desktop) {
-				width: 50rem;
-				right: 5rem;
+			@media (min-width: $desktop) {
+				top: 50%;
+				transform: translateY(-50%);
+				left: 50%;
+				width: 50%;
 			}
 		}
 	}

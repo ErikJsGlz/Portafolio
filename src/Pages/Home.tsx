@@ -7,8 +7,6 @@ import Header from '../Components/Header/Header';
 import { Orbs } from '../Components/Orb/Orbs';
 import './Home.scss';
 
-import AzureLogo from '../assets/icons/azure_logo.svg';
-
 function Component() {
 	const {
 		currentProjectIndex,
