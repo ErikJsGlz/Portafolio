@@ -173,7 +173,7 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 	};
 
 	const getImageClassName = () => {
-		return isCurrentImageMobile() ? 'home__image--mobile' : 'home__image--desktop';
+		return isCurrentImageMobile() ? 'home__body__image--mobile' : 'home__body__image--desktop';
 	};
 
 	const getLogos = (): string[] => {

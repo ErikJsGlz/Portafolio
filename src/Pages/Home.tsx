@@ -23,31 +23,62 @@ function Component() {
 			<Header />
 			<Orbs />
 
-			<AnimatePresence mode="wait">
-				<motion.div
-					key={currentProjectIndex}
-					className="home__body"
-					style={{
-						display: currentProjectIndex !== 0 ? 'flex' : 'none',
-					}}
-				>
-					<Typography>{currentInformationLabel}</Typography>
+			<Box className="home__body">
+				<AnimatePresence mode="wait">
+					<Box>
+						<motion.div
+							key={currentProjectIndex}
+							className="home__body__text"
+							style={{
+								display: currentProjectIndex !== 0 ? 'flex' : 'none',
+							}}
+						>
+							<Typography>{currentInformationLabel}</Typography>
 
-					<Box className="home__body__logos">
-						{logos.map((logo, index) => (
-							<motion.img
-								key={index}
-								src={logo}
-								alt="Logo"
-								initial={{ opacity: 0, scale: 0.8 }}
-								animate={{ opacity: 1, scale: 1 }}
-								transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-								whileHover={{ scale: 1.2 }}
-							/>
-						))}
+							<Box className="home__body__text__logos">
+								{logos.map((logo, index) => (
+									<motion.img
+										key={index}
+										src={logo}
+										alt="Logo"
+										initial={{ opacity: 0, scale: 0.8 }}
+										animate={{ opacity: 1, scale: 1 }}
+										transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+										whileHover={{ scale: 1.2 }}
+									/>
+								))}
+							</Box>
+						</motion.div>
 					</Box>
-				</motion.div>
-			</AnimatePresence>
+					<Box className="home__body__image-container">
+						{currentImage && (
+							<motion.img
+								key={currentImage}
+								src={currentImage}
+								onClick={onClickImage}
+								whileHover={{ scale: 1.2 }}
+								className={`home__body__image ${imageClassName}`}
+								initial={{
+									translateX: -100,
+									opacity: 0,
+								}}
+								animate={{
+									translateX: 0,
+									opacity: 1,
+								}}
+								exit={{
+									translateX: 100,
+									opacity: 0,
+								}}
+								transition={{
+									duration: 0.3,
+									ease: [0.4, 0, 0.2, 1],
+								}}
+							/>
+						)}
+					</Box>
+				</AnimatePresence>
+			</Box>
 
 			<AnimatePresence mode="wait">
 				<motion.div
@@ -74,7 +105,7 @@ function Component() {
 				</motion.div>
 			</AnimatePresence>
 
-			<Box
+			{/* <Box
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
@@ -107,7 +138,7 @@ function Component() {
 						/>
 					)}
 				</AnimatePresence>
-			</Box>
+			</Box> */}
 
 			<Box className="background" />
 		</Box>
