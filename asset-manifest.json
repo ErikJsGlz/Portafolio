@@ -1,9 +1,22 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.6fc34cf7.css",
-    "main.js": "/Portafolio/static/js/main.16e8b613.js",
-    "static/js/453.aae66e54.chunk.js": "/Portafolio/static/js/453.aae66e54.chunk.js",
+    "main.js": "/Portafolio/static/js/main.e47389f0.js",
+    "static/js/453.811e1db4.chunk.js": "/Portafolio/static/js/453.811e1db4.chunk.js",
+    "static/media/promptxr_desktop_01.png": "/Portafolio/static/media/promptxr_desktop_01.d0fd7e8749c68111fe0c.png",
+    "static/media/cei_desktop_01.png": "/Portafolio/static/media/cei_desktop_01.4b3f52c5c2c39afcc979.png",
+    "static/media/nurasign_desktop_01.png": "/Portafolio/static/media/nurasign_desktop_01.3df8a4066d9f03aa4782.png",
+    "static/media/cei_desktop_02.png": "/Portafolio/static/media/cei_desktop_02.69de011643ff77f07dbd.png",
+    "static/media/promptxr_desktop_04.png": "/Portafolio/static/media/promptxr_desktop_04.a214bfcabce870c64e7a.png",
+    "static/media/cei_desktop_03.png": "/Portafolio/static/media/cei_desktop_03.c91a24bc672f80e68bb7.png",
+    "static/media/promptxr_desktop_03.png": "/Portafolio/static/media/promptxr_desktop_03.eee89738def99ec403cc.png",
+    "static/media/nurasign_desktop_02.png": "/Portafolio/static/media/nurasign_desktop_02.35e0cf799ad64888055a.png",
+    "static/media/nurasign_desktop_04.png": "/Portafolio/static/media/nurasign_desktop_04.8a423299816255095b30.png",
+    "static/media/promptxr_desktop_02.png": "/Portafolio/static/media/promptxr_desktop_02.eb3e43f0d55e91de7c4b.png",
+    "static/media/promptxr_desktop_05.png": "/Portafolio/static/media/promptxr_desktop_05.bf89bde384755c8abe38.png",
     "static/media/sisefar_desktop_03.png": "/Portafolio/static/media/sisefar_desktop_03.0abf2bc7ea2726adb94f.png",
+    "static/media/nurasign_desktop_05.png": "/Portafolio/static/media/nurasign_desktop_05.a3d60b0c977ae8e2ec5e.png",
+    "static/media/nurasign_desktop_03.png": "/Portafolio/static/media/nurasign_desktop_03.4d92e6637485e81c130e.png",
     "static/media/sisefar_desktop_01.png": "/Portafolio/static/media/sisefar_desktop_01.85307c5ccd7846cbafac.png",
     "static/media/prp_desktop_03.png": "/Portafolio/static/media/prp_desktop_03.a697b2a2a0770743c361.png",
     "static/media/prp_desktop_04.png": "/Portafolio/static/media/prp_desktop_04.54b029c848e02565702c.png",
@@ -42,11 +55,11 @@
     "index.html": "/Portafolio/index.html",
     "static/media/flutter_logo.svg": "/Portafolio/static/media/flutter_logo.2473d9e6eccd32f7638a8adb8087cce0.svg",
     "main.6fc34cf7.css.map": "/Portafolio/static/css/main.6fc34cf7.css.map",
-    "main.16e8b613.js.map": "/Portafolio/static/js/main.16e8b613.js.map",
-    "453.aae66e54.chunk.js.map": "/Portafolio/static/js/453.aae66e54.chunk.js.map"
+    "main.e47389f0.js.map": "/Portafolio/static/js/main.e47389f0.js.map",
+    "453.811e1db4.chunk.js.map": "/Portafolio/static/js/453.811e1db4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6fc34cf7.css",
-    "static/js/main.16e8b613.js"
+    "static/js/main.e47389f0.js"
   ]
 }
