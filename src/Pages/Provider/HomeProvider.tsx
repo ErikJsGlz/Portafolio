@@ -45,6 +45,25 @@ import Sisefar01 from '../../assets/img/sisefar_layout/sisefar_desktop_01.png';
 import Sisefar02 from '../../assets/img/sisefar_layout/sisefar_desktop_02.png';
 import Sisefar03 from '../../assets/img/sisefar_layout/sisefar_desktop_03.png';
 
+import Cei1 from '../../assets/img/cei_layout/cei_desktop_01.png';
+import Cei2 from '../../assets/img/cei_layout/cei_desktop_02.png';
+import Cei3 from '../../assets/img/cei_layout/cei_desktop_03.png';
+import Cei4 from '../../assets/img/cei_layout/cei_desktop_01.png';
+import Cei5 from '../../assets/img/cei_layout/cei_desktop_02.png';
+import Cei6 from '../../assets/img/cei_layout/cei_desktop_03.png';
+
+import Nurasign01 from '../../assets/img/nurasign_layout/nurasign_desktop_01.png';
+import Nurasign02 from '../../assets/img/nurasign_layout/nurasign_desktop_02.png';
+import Nurasign03 from '../../assets/img/nurasign_layout/nurasign_desktop_03.png';
+import Nurasign04 from '../../assets/img/nurasign_layout/nurasign_desktop_04.png';
+import Nurasign05 from '../../assets/img/nurasign_layout/nurasign_desktop_05.png';
+
+import Promptxr01 from '../../assets/img/promptxr_layout/promptxr_desktop_01.png';
+import Promptxr02 from '../../assets/img/promptxr_layout/promptxr_desktop_02.png';
+import Promptxr03 from '../../assets/img/promptxr_layout/promptxr_desktop_03.png';
+import Promptxr04 from '../../assets/img/promptxr_layout/promptxr_desktop_04.png';
+import Promptxr05 from '../../assets/img/promptxr_layout/promptxr_desktop_05.png';
+
 export interface HomeContextType {
 	currentProjectIndex: number;
 	setCurrentProject: (index: number) => void;
@@ -121,6 +140,12 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 
 	const sisefarImages = [Sisefar01, Sisefar02, Sisefar03];
 
+	const ceiImages = [Cei1, Cei2, Cei3, Cei4, Cei5, Cei6];
+
+	const nurasignImages = [Nurasign01, Nurasign02, Nurasign03, Nurasign04, Nurasign05];
+
+	const promptxrImages = [Promptxr01, Promptxr02, Promptxr03, Promptxr04, Promptxr05];
+
 	const images: Record<number, string[]> = {
 		0: [],
 		1: myWundImages,
@@ -128,6 +153,9 @@ export function HomeProvider({ children }: { children: React.ReactNode }) {
 		3: leyImages,
 		4: prpImages,
 		5: sisefarImages,
+		6: ceiImages,
+		7: nurasignImages,
+		8: promptxrImages,
 		9: [],
 	};
 

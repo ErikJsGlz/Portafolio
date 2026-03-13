@@ -102,7 +102,7 @@ export default function HeaderDesktop() {
 
 						<Stack className="header__bubble__body__content">
 							<Typography className="header__bubble__body__content__year">
-								2025
+								2025-2026
 							</Typography>
 							<Button
 								className="header__bubble__body__content__project"
